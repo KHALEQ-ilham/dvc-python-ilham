@@ -1,0 +1,3 @@
+Accuracy Logistic: 0.97
+Accuracy SVM: 0.98
+Accuracy Naive Bayes: 0.96
