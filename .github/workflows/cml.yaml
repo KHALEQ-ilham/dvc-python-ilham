@@ -1,43 +1,57 @@
 name: churn-dvc-pyth
+
 on: [push]
+
 permissions: write-all
+
 jobs:
   run:
     runs-on: ubuntu-latest
-    # optionally use a convenient Ubuntu LTS + DVC + CML image
-    # container: ghcr.io/iterative/cml:0-dvc2-base1
+
     steps:
       - uses: actions/checkout@v3
-      
+
       - uses: actions/setup-node@v3
         with:
-           node-version: '16'
+          node-version: '16'
+
       - uses: actions/setup-python@v4
         with:
-           python-version: '3.9'
+          python-version: '3.9'
+
       - uses: iterative/setup-cml@v1
-      
-      - name: prepare Environment
+
+      - name: Prepare Environment and Configure DVC Remote
         env:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
-          
         run: |
-          # Your ML workflow goes here
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install dvc[all]
+
+          # 🔐 Créer le fichier de clé JSON
+          echo "$GDRIVE_CREDENTIALS_DATA" > mlopss.json
+
+          # 🔧 Configurer le remote DVC pour utiliser la clé
+          dvc remote modify gdrive_remote gdrive_use_service_account true
+          dvc remote modify gdrive_remote gdrive_service_account_json_file_path mlopss.json
+
+          # 📥 Télécharger les données
           dvc pull
+
+          # 🧠 Entraîner le modèle
           python Untitled.py
+
+          # 📤 Ajouter et pousser les résultats
           dvc add ./data/ ./models/
           dvc push
-          
+
       - name: Generate Report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Post reports as comments in GitHub PRs
           echo "## Metrics" > report.md
           cat metrics.txt >> report.md
-          echo "##confusion matrix" >>report.md
+          echo "## Confusion matrix" >> report.md
           echo "![](./conf_matrix.png)" >> report.md
           cml comment create report.md
