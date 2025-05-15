@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pandas
 numpy
 scikit-learn
@@ -6,12 +5,7 @@ matplotlib
 seaborn
 joblib
 dvc[all]
-=======
 fastapi
 uvicorn
 python-multipart
-joblib
-numpy
 tensorflow
-scikit-learn
->>>>>>> 11b38e0 (modification project)
