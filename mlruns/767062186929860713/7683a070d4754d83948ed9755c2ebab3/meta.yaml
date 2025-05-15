@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/767062186929860713/7683a070d4754d83948ed9755c2ebab3/artifacts
+end_time: 1746968676795
+entry_point_name: ''
+experiment_id: '767062186929860713'
+lifecycle_stage: active
+run_id: 7683a070d4754d83948ed9755c2ebab3
+run_name: Logistic
+run_uuid: 7683a070d4754d83948ed9755c2ebab3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746968671184
+status: 3
+tags: []
+user_id: ILHAM

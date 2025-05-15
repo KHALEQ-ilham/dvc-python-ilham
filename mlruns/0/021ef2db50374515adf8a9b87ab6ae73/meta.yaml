@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ILHAM/projet-python-ilha/mlruns/0/021ef2db50374515adf8a9b87ab6ae73/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 021ef2db50374515adf8a9b87ab6ae73
+run_name: Model
+run_uuid: 021ef2db50374515adf8a9b87ab6ae73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746830014863
+status: 1
+tags: []
+user_id: ILHAM

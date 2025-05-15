@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/767062186929860713/49d89b90b8b7434ab47b6337cf3d3ede/artifacts
+end_time: 1746968678135
+entry_point_name: ''
+experiment_id: '767062186929860713'
+lifecycle_stage: active
+run_id: 49d89b90b8b7434ab47b6337cf3d3ede
+run_name: SVM
+run_uuid: 49d89b90b8b7434ab47b6337cf3d3ede
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746968676916
+status: 3
+tags: []
+user_id: ILHAM

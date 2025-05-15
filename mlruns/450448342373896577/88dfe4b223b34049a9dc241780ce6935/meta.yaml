@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/450448342373896577/88dfe4b223b34049a9dc241780ce6935/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '450448342373896577'
+lifecycle_stage: active
+run_id: 88dfe4b223b34049a9dc241780ce6935
+run_name: LSTM
+run_uuid: 88dfe4b223b34049a9dc241780ce6935
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747059231040
+status: 1
+tags: []
+user_id: ILHAM

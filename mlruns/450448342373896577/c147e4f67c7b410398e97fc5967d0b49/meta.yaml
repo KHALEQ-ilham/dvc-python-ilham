@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/450448342373896577/c147e4f67c7b410398e97fc5967d0b49/artifacts
+end_time: 1746969361840
+entry_point_name: ''
+experiment_id: '450448342373896577'
+lifecycle_stage: active
+run_id: c147e4f67c7b410398e97fc5967d0b49
+run_name: NaiveBayes
+run_uuid: c147e4f67c7b410398e97fc5967d0b49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746969361071
+status: 3
+tags: []
+user_id: ILHAM

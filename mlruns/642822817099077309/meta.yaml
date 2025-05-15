@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/642822817099077309
+creation_time: 1747311806715
+experiment_id: '642822817099077309'
+last_update_time: 1747311806715
+lifecycle_stage: active
+name: Hate Speech Detection spam/ham

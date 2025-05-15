@@ -1,0 +1,11 @@
+groups:
+- name: model-alerts
+  rules:
+  - alert: LowModelAccuracy
+    expr: model_accuracy < 0.85
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Model accuracy too low (below 85%)"
+      description: "The model {{ $labels.model }} has accuracy {{ $value }}."

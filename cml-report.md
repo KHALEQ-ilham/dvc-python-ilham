@@ -1,15 +1,16 @@
-# Rapport CML
-## Logistic Regression
-- Accuracy: **0.9677**
-![Logistic Confusion](logistic_confusion.png)
-![Logistic ROC](logistic_roc.png)
+## Logistic
+- Accuracy: 0.9677
+![Logistic Confusion](Logistic_conf.png)
 
 ## SVM
-- Accuracy: **0.9829**
-![SVM Confusion](svm_confusion.png)
-![SVM ROC](svm_roc.png)
+- Accuracy: 0.9829
+![SVM Confusion](SVM_conf.png)
 
-## Naive Bayes
-- Accuracy: **0.9623**
-![NB Confusion](nb_confusion.png)
-![NB ROC](nb_roc.png)
+## NaiveBayes
+- Accuracy: 0.9623
+![NaiveBayes Confusion](NaiveBayes_conf.png)
+
+## LSTM
+- Accuracy: 0.9820
+![LSTM Confusion](LSTM_conf.png)
+
